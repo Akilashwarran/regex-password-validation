@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="text_container">
+                <h1>Sign Up</h1>
+                <p>Sign up to clue mediator</p>
+            </div>
+            <div class="form_container">
+                <form>
+                    <div class="name_box">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="name" placeholder="Name" id="name">
+                    </div>
+                    <div class="email_box">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" name="email" placeholder="Email Address" id="email">
+                    </div>
+                    <div class="number_box">
+                        <i class="fas fa-mobile-alt"></i>
+                        <input type="text" name="mobile no" placeholder="Mobile Number" id="mobile_no">
+                    </div>
+                    <div class="user_box">
+                        <i class="fas fa-user-circle"></i>
+                        <input type="text" name="uname" placeholder="Username" id="uname">
+                    </div>
+                    <div class="password_box">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="pword" placeholder="Password" id="pword" onfocus="show()" onblur="hide()" onkeyup="validatePassword()">
+                        <div class="tooltip" id="myTooltip">
+                            <h3>Password must contain the following:</h3>
+                            <p id="lcase" class="invalid">A <b>lowercase</b> letter</p>
+                            <p id="ucase" class="invalid">An <b>uppercase</b> letter</p>
+                            <p id="digits" class="invalid">A <b>number</b></p>
+                            <p id="charlen" class="invalid">Minimum <b>8 characters</b></p>
+                        </div>
+                    </div>
+                    <div class="confirm_box">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="confirm" placeholder="Confirm Password" id="confirm">
+                    </div>
+                    <div>
+                        <button type="button">Sign Up</button>
+                    </div>
+                    <p>Already have an account? Login</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
